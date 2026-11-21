@@ -63,6 +63,7 @@
 #include "core/libraries/playgo/playgo.h"
 #include "core/libraries/playgo/playgo_dialog.h"
 #include "core/libraries/random/random.h"
+#include "core/libraries/ult/ult.h"
 #include "core/libraries/razor_cpu/razor_cpu.h"
 #include "core/libraries/remote_play/remoteplay.h"
 #include "core/libraries/rudp/rudp.h"
@@ -192,6 +193,7 @@ void InitHLELibs(Core::Loader::SymbolsResolver* sym) {
             {"libSceHmdSetupDialog.sprx", Libraries::HmdSetupDialog::RegisterLib},
             {"libSceDiscMap.sprx", Libraries::DiscMap::RegisterLib},
             {"ulobjmgr.sprx", Libraries::Ulobjmgr::RegisterLib},
+            {"libSceUlt.sprx", Libraries::Ult::RegisterLib},
             {"libSceSigninDialog.sprx", Libraries::SigninDialog::RegisterLib},
             {"libSceCamera.sprx", Libraries::Camera::RegisterLib},
             {"libSceCompanionHttpd.sprx", Libraries::CompanionHttpd::RegisterLib},
